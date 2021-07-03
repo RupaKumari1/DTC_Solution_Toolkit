@@ -1,0 +1,13 @@
+name: DTC_Solution_Toolkit
+title: DTC_Solution_Toolkit
+username:
+account: lending
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4202945
+bundleId: 4654869
+url: https://lending.shinyapps.io/DTC_Solution_Toolkit/
+when: 1622305486.10292
+lastSyncTime: 1622305486.10292
+asMultiple: FALSE
+asStatic: FALSE
