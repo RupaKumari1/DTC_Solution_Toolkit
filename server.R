@@ -1,6 +1,9 @@
 # Shiny Server
-# DTC Solution Toolkit - This analytical framework will facilitate  to improve DTC to increase customers
-# Rupa Kumari & Md Mehran Abul
+# DTC Solution Toolkit - This analytical framework will facilitate in improving 
+# i) Customer and driver partner  experience
+# ii) Improved demand supply balance
+# iii) Better revenue analysis and monitoring
+# Authors: Rupa Kumari & Md Mehran Abul
 # Date: July 5, 2021 
 
 #server.R
@@ -61,12 +64,13 @@ function(input, output, session) {
     rating <- webpage %>%
       html_nodes("div.ratingContainer") %>%
       html_text()
-    rating
-    value <-as.numeric(substr(rating, 1,3))
+    
+    rating_v <-substr(rating, 1,3)
+    rating_int <-as.numeric(gsub(",", ".", rating_v))
     
     fig <- plot_ly(
       domain = list(x = c(0, 1), y = c(0, 1)),
-      value = value,
+      value = rating_int,
       title = list(text = "Trip Advisor Rating", font = list(size = 24)),
       type = "indicator",
       mode = "gauge+number",

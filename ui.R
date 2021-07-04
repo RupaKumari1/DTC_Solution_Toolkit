@@ -1,6 +1,9 @@
 # Shiny Home
-# DTC Solution Toolkit - This analytical framework will facilitate  to improve DTC to increase customers
-# Rupa Kumari & Md Mehran Abul
+# DTC Solution Toolkit - This analytical framework will facilitate in improving 
+# i) Customer and driver partner  experience
+# ii) Improved demand supply balance
+# iii) Better revenue analysis and monitoring
+# Authors: Rupa Kumari & Md Mehran Abul
 # Date: July 5, 2021 
 
 #ui.R
