@@ -64,7 +64,7 @@ function(input, output, session) {
     rating <- webpage %>%
       html_nodes("div.ratingContainer") %>%
       html_text()
-    
+
     rating_v <-substr(rating, 1,3)
     rating_int <-as.numeric(gsub(",", ".", rating_v))
     
